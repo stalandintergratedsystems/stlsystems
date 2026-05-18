@@ -1,0 +1,19 @@
+# Staland Integrated Systems - robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Allow all search engines to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://stlsystems.com/sitemap.xml
+
+# Crawl delay (optional - in seconds)
+Crawl-delay: 1
