@@ -166,4 +166,38 @@ button {
 .location-card:hover {
     transform: translateY(-5px);
 }
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 50px;
+}
+
+.service-card {
+    display: block;
+    text-decoration: none;
+    color: #222 !important;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-details {
+    padding: 60px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.service-details ul {
+    line-height: 2;
+}body {
+    background: #f5f7fa;
+    color: #222;
+}
 
