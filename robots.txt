@@ -13,7 +13,7 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap location
-Sitemap: https://stlsystems.com/sitemap.xml
+Sitemap: https://stlsystems.netlify.app/sitemap.xml
 
 # Crawl delay (optional - in seconds)
 Crawl-delay: 1
