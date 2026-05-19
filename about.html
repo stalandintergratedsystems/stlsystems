@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Staland Integrated Systems - Professional Land Surveying Kenya</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Learn about Staland Integrated Systems - 10+ years of professional land surveying expertise in Kenya. Our mission, team, and commitment to excellence.">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #0b3d2e, #145c43);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about-hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .about-hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .about-section h2 {
+            color: #0b3d2e;
+            font-size: 32px;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #25D366;
+            padding-bottom: 10px;
+        }
+
+        .about-content {
+            line-height: 1.8;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .mission-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .mission-card, .vision-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+            border-left: 5px solid #0b3d2e;
+        }
+
+        .mission-card h3, .vision-card h3 {
+            color: #0b3d2e;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .core-values {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .value-card {
+            background: linear-gradient(135deg, #0b3d2e, #145c43);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .value-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .value-card h4 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .team-highlight {
+            background: #f0f8f5;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 5px solid #25D366;
+        }
+
+        .expertise-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .expertise-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .expertise-item:before {
+            content: "✓";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 15px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .stat-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .stat-box .number {
+            color: #0b3d2e;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .stat-box p {
+            color: #666;
+            margin: 10px 0 0 0;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #0b3d2e, #145c43);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin: 50px 0;
+        }
+
+        .cta-section h2 {
+            color: white;
+            border: none;
+        }
+
+        .cta-section .btn {
+            background: #25D366;
+            color: #0b3d2e;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 28px;
+            }
+
+            .mission-vision {
+                grid-template-columns: 1fr;
+            }
+
+            .expertise-list {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content p {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Staland Integrated Systems</h1>
+        <p>Precision Surveying, Fencing & Land Solutions</p>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="training.html">Training</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="locations.html">Locations</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="about-hero fade-in">
+    <h1>About Staland Integrated Systems</h1>
+    <p>Delivering Excellence in Land Surveying & Geospatial Solutions Since 2016</p>
+</section>
+
+<!-- COMPANY OVERVIEW -->
+<section class="about-section fade-in">
+    <h2>Who We Are</h2>
+    <div class="about-content">
+        <p>
+            Staland Integrated Systems is a leading professional land surveying and geospatial solutions company based in <strong>Diani, Kwale County, Kenya</strong>. With over <strong>10 years of field experience</strong>, we have established ourselves as a trusted partner for accurate, reliable, and innovative surveying solutions across Kenya and internationally.
+        </p>
+        <p>
+            We specialize in combining professional surveying expertise with cutting-edge geospatial technology to deliver comprehensive solutions for boundary surveys, topographical mapping, land administration, fencing solutions, and project management. Our commitment to precision, integrity, and client satisfaction has earned us recognition among developers, real estate professionals, government agencies, and private clients.
+        </p>
+    </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section class="about-section fade-in">
+    <h2>Our Mission & Vision</h2>
+    <div class="mission-vision">
+        <div class="mission-card">
+            <h3>🎯 Our Mission</h3>
+            <p>
+                To provide accurate, timely, and cost-effective land surveying and geospatial solutions that support informed decision-making, promote legal certainty, and facilitate sustainable development across Kenya and beyond.
+            </p>
+        </div>
+        <div class="vision-card">
+            <h3>🚀 Our Vision</h3>
+            <p>
+                To be the most trusted and innovative surveying and geospatial solutions provider in East Africa, recognized for technical excellence, customer service, and contribution to national development.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="about-section fade-in">
+    <h2>Core Values</h2>
+    <div class="core-values">
+        <div class="value-card">
+            <h4>Accuracy</h4>
+            <p>Precision in every measurement and data point</p>
+        </div>
+        <div class="value-card">
+            <h4>Integrity</h4>
+            <p>Ethical standards and transparency in all dealings</p>
+        </div>
+        <div class="value-card">
+            <h4>Innovation</h4>
+            <p>Adopting advanced technology and modern methods</p>
+        </div>
+        <div class="value-card">
+            <h4>Reliability</h4>
+            <p>Consistent delivery and professional excellence</p>
+        </div>
+        <div class="value-card">
+            <h4>Client Focus</h4>
+            <p>Understanding and exceeding client expectations</p>
+        </div>
+        <div class="value-card">
+            <h4>Sustainability</h4>
+            <p>Responsible practices for environmental and social benefit</p>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERTISE & CAPABILITIES -->
+<section class="about-section fade-in">
+    <h2>Our Expertise & Capabilities</h2>
+    <div class="expertise-list">
+        <div class="expertise-item">Cadastral Surveying & Boundary Demarcation</div>
+        <div class="expertise-item">Topographical & Contour Mapping</div>
+        <div class="expertise-item">Land Subdivision & Consolidation Services</div>
+        <div class="expertise-item">RTK GNSS Technology Operations</div>
+        <div class="expertise-item">Total Station Surveys & Measurements</div>
+        <div class="expertise-item">GIS Mapping & Geospatial Analysis</div>
+        <div class="expertise-item">Land Administration & Title Support</div>
+        <div class="expertise-item">Professional Fencing Solutions</div>
+        <div class="expertise-item">Project Supervision & Management</div>
+        <div class="expertise-item">Drone Surveying & Aerial Mapping</div>
+        <div class="expertise-item">Real Estate Valuation Support</div>
+        <div class="expertise-item">Training in Survey Instrumentation</div>
+    </div>
+</section>
+
+<!-- KEY STATISTICS -->
+<section class="about-section fade-in">
+    <h2>Our Track Record</h2>
+    <div class="stats-section">
+        <div class="stat-box">
+            <div class="number">10+</div>
+            <p>Years of Professional Experience</p>
+        </div>
+        <div class="stat-box">
+            <div class="number">1000+</div>
+            <p>Successful Projects Completed</p>
+        </div>
+        <div class="stat-box">
+            <div class="number">Nationwide</div>
+            <p>Coverage Across Kenya</p>
+        </div>
+        <div class="stat-box">
+            <div class="number">500+</div>
+            <p>Satisfied Clients</p>
+        </div>
+    </div>
+</section>
+
+<!-- TEAM & EXPERTISE -->
+<section class="about-section fade-in">
+    <h2>Our Team</h2>
+    <div class="team-highlight">
+        <p>
+            <strong>Led by experienced surveyors and geospatial professionals,</strong> our team combines decades of field experience with advanced technical knowledge. Our professionals are trained in the latest surveying technologies and methodologies, holding relevant certifications and qualifications from recognized institutions.
+        </p>
+        <p>
+            We maintain a collaborative approach, working closely with clients, contractors, and government agencies to ensure every project meets the highest standards of accuracy, quality, and professionalism.
+        </p>
+    </div>
+</section>
+
+<!-- TECHNOLOGY & EQUIPMENT -->
+<section class="about-section fade-in">
+    <h2>Technology & Equipment</h2>
+    <div class="about-content">
+        <p>
+            We invest in state-of-the-art surveying equipment and technology to deliver superior results:
+        </p>
+        <div class="expertise-list">
+            <div class="expertise-item">Real-Time Kinematic (RTK) GNSS Systems</div>
+            <div class="expertise-item">Total Station Instruments</div>
+            <div class="expertise-item">Digital Level Instruments</div>
+            <div class="expertise-item">Drone Survey Equipment</div>
+            <div class="expertise-item">Advanced GIS Software</div>
+            <div class="expertise-item">GPS Data Collectors & Mobile Solutions</div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="about-section fade-in">
+    <h2>Geographic Coverage</h2>
+    <div class="about-content">
+        <p>
+            While based in <strong>Diani, Kwale County</strong>, we serve clients across Kenya including:
+        </p>
+        <div class="expertise-list">
+            <div class="expertise-item">Coastal Region (Kwale, Mombasa, Kilifi)</div>
+            <div class="expertise-item">Central Kenya (Nairobi, Kiambu, Muranga)</div>
+            <div class="expertise-item">Eastern Region (Machakos, Makueni)</div>
+            <div class="expertise-item">Western Region (Kisumu, Nakuru)</div>
+            <div class="expertise-item">Rift Valley Counties</div>
+            <div class="expertise-item">International Projects (Upon Request)</div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="about-section fade-in">
+    <h2>Why Choose Us</h2>
+    <div class="expertise-list">
+        <div class="expertise-item">Proven Track Record with 10+ Years Experience</div>
+        <div class="expertise-item">Modern Technology & Advanced Equipment</div>
+        <div class="expertise-item">Professional, Certified & Experienced Team</div>
+        <div class="expertise-item">Competitive & Transparent Pricing</div>
+        <div class="expertise-item">Fast Turnaround Times</div>
+        <div class="expertise-item">Professional Quality Assurance</div>
+        <div class="expertise-item">Excellent Customer Service</div>
+        <div class="expertise-item">Legal Compliance & Certification</div>
+    </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section fade-in">
+    <h2>Ready to Work With Us?</h2>
+    <p>Contact us today to discuss your surveying and geospatial needs</p>
+    <a href="contact.html" class="btn primary">Get In Touch</a>
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/254707151860" class="whatsapp-float" target="_blank">
+    WhatsApp Us
+</a>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Staland Integrated Systems. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
