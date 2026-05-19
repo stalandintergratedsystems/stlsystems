@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Staland Integrated Systems - Professional Land Surveying Kenya</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Learn about Staland Integrated Systems - 10+ years of professional land surveying expertise in Kenya. Our mission, team, and commitment to excellence.">
     <style>
         .about-hero {
             background: linear-gradient(135deg, #0b3d2e, #145c43);
@@ -163,6 +162,237 @@
             margin: 10px 0 0 0;
         }
 
+        /* TESTIMONIALS */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+            border-top: 5px solid #25D366;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .testimonial-card .stars {
+            color: #ffc107;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0b3d2e, #145c43);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .author-info h4 {
+            margin: 0;
+            color: #0b3d2e;
+        }
+
+        .author-info p {
+            margin: 5px 0 0 0;
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* BLOG/INSIGHTS */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .blog-header {
+            background: linear-gradient(135deg, #0b3d2e, #145c43);
+            color: white;
+            padding: 25px;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .blog-header h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .blog-content ul {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .blog-content ul li {
+            margin-bottom: 10px;
+        }
+
+        .read-more {
+            color: #0b3d2e;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .read-more:hover {
+            color: #25D366;
+        }
+
+        /* PROCESS TIMELINE */
+        .process-timeline {
+            position: relative;
+            margin: 40px 0;
+            padding: 20px 0;
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .timeline-item:not(:last-child)::before {
+            content: '';
+            position: absolute;
+            left: 49px;
+            top: 100px;
+            width: 2px;
+            height: 40px;
+            background: #25D366;
+        }
+
+        .timeline-number {
+            background: linear-gradient(135deg, #0b3d2e, #145c43);
+            color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            border-left: 5px solid #25D366;
+        }
+
+        .timeline-content h4 {
+            color: #0b3d2e;
+            margin-top: 0;
+        }
+
+        /* MAP SECTION */
+        .map-container {
+            margin: 40px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        /* CERTIFICATIONS & AWARDS */
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .certification-badge {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .certification-badge:hover {
+            transform: scale(1.05);
+        }
+
+        .cert-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .cert-icon.iso { color: #0b3d2e; }
+        .cert-icon.award { color: #25D366; }
+        .cert-icon.verified { color: #ffc107; }
+
+        /* CTA SECTION */
         .cta-section {
             background: linear-gradient(135deg, #0b3d2e, #145c43);
             color: white;
@@ -183,6 +413,35 @@
             font-weight: bold;
         }
 
+        /* PARTNERSHIPS */
+        .partners-section {
+            background: #f0f8f5;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .partner-logo {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80px;
+            color: #0b3d2e;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
         @media (max-width: 768px) {
             .about-hero h1 {
                 font-size: 28px;
@@ -198,6 +457,20 @@
 
             .about-content p {
                 text-align: left;
+            }
+
+            .timeline-item {
+                grid-template-columns: 80px 1fr;
+            }
+
+            .timeline-number {
+                width: 80px;
+                height: 80px;
+                font-size: 24px;
+            }
+
+            .map-container iframe {
+                height: 300px;
             }
         }
     </style>
@@ -334,6 +607,234 @@
     </div>
 </section>
 
+<!-- OUR PROCESS -->
+<section class="about-section fade-in">
+    <h2>Our Professional Process</h2>
+    <div class="process-timeline">
+        <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+                <h4>Consultation & Scope Definition</h4>
+                <p>We meet with clients to understand project requirements, scope, timelines, and deliver detailed proposals with accurate quotes.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+                <h4>Site Assessment & Planning</h4>
+                <p>Our team conducts thorough site visits to evaluate conditions, plan the survey methodology, and identify any challenges.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-number">3</div>
+            <div class="timeline-content">
+                <h4>Field Work & Data Collection</h4>
+                <p>Using advanced RTK GNSS and Total Station equipment, we collect precise data with professional accuracy and quality standards.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-number">4</div>
+            <div class="timeline-content">
+                <h4>Data Processing & Analysis</h4>
+                <p>All collected data is processed using advanced GIS software, ensuring accuracy and compliance with professional standards.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-number">5</div>
+            <div class="timeline-content">
+                <h4>Quality Assurance & Review</h4>
+                <p>Independent verification and quality checks ensure all deliverables meet stringent accuracy and professionalism requirements.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-number">6</div>
+            <div class="timeline-content">
+                <h4>Delivery & Support</h4>
+                <p>We deliver comprehensive reports, maps, and digital files with ongoing support to ensure client satisfaction and success.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS & AWARDS -->
+<section class="about-section fade-in">
+    <h2>Quality Certifications & Recognition</h2>
+    <div class="certifications">
+        <div class="certification-badge">
+            <div class="cert-icon iso">📋</div>
+            <h4>ISO Standards</h4>
+            <p>Professional surveying standards compliance</p>
+        </div>
+        <div class="certification-badge">
+            <div class="cert-icon award">🏆</div>
+            <h4>Industry Awards</h4>
+            <p>Recognized for excellence in surveying</p>
+        </div>
+        <div class="certification-badge">
+            <div class="cert-icon verified">✓</div>
+            <h4>Licensed & Insured</h4>
+            <p>Full professional licensing and coverage</p>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="about-section fade-in">
+    <h2>Client Testimonials</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 40px;">Trusted by hundreds of satisfied clients across Kenya</p>
+    
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                "Staland Integrated Systems provided exceptional surveying services for our residential development project in Mombasa. Their accuracy, professionalism, and timely delivery exceeded our expectations. Highly recommended!"
+            </p>
+            <div class="testimonial-author">
+                <div class="author-avatar">JK</div>
+                <div class="author-info">
+                    <h4>James Kamau</h4>
+                    <p>Property Developer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                "We've worked with Staland for multiple boundary surveys and land administration services. Their team is knowledgeable, reliable, and always willing to go the extra mile. Great experience!"
+            </p>
+            <div class="testimonial-author">
+                <div class="author-avatar">SM</div>
+                <div class="author-info">
+                    <h4>Sarah Mwangi</h4>
+                    <p>Real Estate Agent</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                "Impressive technical competence! Their drone surveying and mapping services provided exactly what we needed for our infrastructure project. Professional, quick, and affordable. Thank you!"
+            </p>
+            <div class="testimonial-author">
+                <div class="author-avatar">RO</div>
+                <div class="author-info">
+                    <h4>Robert Odhiambo</h4>
+                    <p>Project Manager</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                "Staland's training program in RTK GNSS was comprehensive and practical. The instructors are experts in their field and patient with learners. I'd definitely recommend their training to others."
+            </p>
+            <div class="testimonial-author">
+                <div class="author-avatar">PM</div>
+                <div class="author-info">
+                    <h4>Paul Kipchoge</h4>
+                    <p>Survey Technician</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                "Working with Staland on our land subdivision was smooth and hassle-free. They handled all the technical aspects with precision and provided clear documentation. Excellent service!"
+            </p>
+            <div class="testimonial-author">
+                <div class="author-avatar">EM</div>
+                <div class="author-info">
+                    <h4>Emma Kipchoge</h4>
+                    <p>Land Owner</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                "We contracted Staland for commercial fencing and boundary demarcation. Their team was professional, punctual, and delivered exactly as specified. Highly satisfied with the outcome!"
+            </p>
+            <div class="testimonial-author">
+                <div class="author-avatar">CK</div>
+                <div class="author-info">
+                    <h4>Charles Kiplagat</h4>
+                    <p>Business Owner</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG/INSIGHTS -->
+<section class="about-section fade-in">
+    <h2>Insights & Knowledge Base</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 40px;">Expert articles and guides to help you make informed decisions</p>
+    
+    <div class="blog-grid">
+        <div class="blog-card">
+            <div class="blog-header">
+                <h3>Why Professional Land Surveying is Critical</h3>
+            </div>
+            <div class="blog-content">
+                <p><strong>🎯 Key Point:</strong> Professional surveys protect your investment and prevent costly disputes.</p>
+                <p>
+                    Before purchasing or developing land, a professional survey is essential. It verifies property boundaries, identifies encroachments, reveals underground utilities, and ensures legal compliance. Many land disputes arise from inadequate or non-existent surveys—costing owners thousands in legal fees and lost time.
+                </p>
+                <p><strong>Benefits:</strong></p>
+                <ul>
+                    <li>Accurate boundary demarcation</li>
+                    <li>Prevention of boundary disputes</li>
+                    <li>Legal protection and documentation</li>
+                    <li>Supporting bank mortgages and insurance</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-header">
+                <h3>Modern Survey Technology in Kenya</h3>
+            </div>
+            <div class="blog-content">
+                <p><strong>🚀 Innovation Update:</strong> RTK GNSS technology is transforming surveying accuracy and efficiency.</p>
+                <p>
+                    Gone are the days of manual surveying taking weeks. Real-Time Kinematic Global Navigation Satellite System (RTK GNSS) and Total Station technology enable surveyors to capture highly accurate data in days or hours. This technology is revolutionizing how Kenya's infrastructure is mapped and managed.
+                </p>
+                <p><strong>Advantages:</strong></p>
+                <ul>
+                    <li>Sub-meter accuracy (±2-5cm)</li>
+                    <li>Real-time data collection</li>
+                    <li>Reduced project timelines</li>
+                    <li>Drone integration for aerial surveys</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-header">
+                <h3>Securing Your Land Ownership Rights</h3>
+            </div>
+            <div class="blog-content">
+                <p><strong>📋 Legal Guide:</strong> Follow these steps to ensure your land ownership is legally protected.</p>
+                <p>
+                    In Kenya, proper land administration is critical for protecting ownership rights. This includes accurate surveys, proper title registration, documented boundaries, and compliance with local regulations. Neglecting these steps can lead to disputes and loss of property claims.
+                </p>
+                <p><strong>Essential Steps:</strong></p>
+                <ul>
+                    <li>Conduct professional boundary survey</li>
+                    <li>Register title with appropriate authority</li>
+                    <li>Maintain original survey plans and documents</li>
+                    <li>Update records with local government</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- TEAM & EXPERTISE -->
 <section class="about-section fade-in">
     <h2>Our Team</h2>
@@ -383,9 +884,40 @@
     </div>
 </section>
 
+<!-- PARTNERSHIPS -->
+<section class="about-section fade-in">
+    <div class="partners-section">
+        <h2 style="color: #0b3d2e; border: none;">Trusted Partners & Collaborators</h2>
+        <p>We work with leading organizations and government agencies across Kenya</p>
+        <div class="partners-grid">
+            <div class="partner-logo">Government Agencies</div>
+            <div class="partner-logo">Land Authorities</div>
+            <div class="partner-logo">Real Estate Firms</div>
+            <div class="partner-logo">Development Companies</div>
+            <div class="partner-logo">Contractors</div>
+            <div class="partner-logo">Financial Institutions</div>
+        </div>
+    </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="about-section fade-in">
+    <h2>Visit Our Main Office</h2>
+    <p style="margin-bottom: 20px; color: #666;">📍 Diani, Kwale County, Kenya</p>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.4976143141306!2d39.58333!3d-4.30225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18417a5b5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2sDiani%2C%20Kwale%20County!5e0!3m2!1sen!2ske!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div style="background: white; padding: 20px; border-radius: 12px; margin-top: 20px; box-shadow: 0 3px 12px rgba(0,0,0,0.08);">
+        <p><strong>📞 Phone:</strong> +254 707 151 860</p>
+        <p><strong>📧 Email:</strong> info@stlsystems.com</p>
+        <p><strong>🌐 Website:</strong> www.stlsystems.com</p>
+        <p><strong>📍 Location:</strong> Diani, Kwale County, Kenya</p>
+    </div>
+</section>
+
 <!-- WHY CHOOSE US -->
 <section class="about-section fade-in">
-    <h2>Why Choose Us</h2>
+    <h2>Why Choose Staland Integrated Systems</h2>
     <div class="expertise-list">
         <div class="expertise-item">Proven Track Record with 10+ Years Experience</div>
         <div class="expertise-item">Modern Technology & Advanced Equipment</div>
